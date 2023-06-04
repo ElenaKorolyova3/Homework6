@@ -10,7 +10,7 @@ def degree_num (A, B):
     if B == 0:
         return 1
     if B > 0:
-        return A ** B
+        return A * degree_num(A, B-1)
         
 
 A = int(input("Введите число A: "))
